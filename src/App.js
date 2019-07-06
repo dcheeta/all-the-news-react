@@ -33,7 +33,7 @@ class App extends React.Component {
     this.setState({ isLoading: true });
     this.setState({ activeLink: section });
     fetch(
-      `https://api.nytimes.com/svc/topstories/v2/${section}.json?api-key=uQG4jhIEHKHKm0qMKGcTHqUgAolr1GM0`,
+      `https://api.nytimes.com/svc/topstories/v2/${section}.json?api-key=fw7AZuZdN0iWJvI0CgLgQZIhMrXPU6Db`,
     )
       .then(response => response.json())
       .then(data => this.setState({ stories: data.results, isLoading: false }))
